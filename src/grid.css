@@ -1,0 +1,351 @@
+/* 
+    Gird: 6
+*/
+.row {
+    --gutter:10px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+/*de keo dai element ra*/
+    margin-left: calc(-1 * (--gutter));
+    margin-right: calc(-1 * (--gutter));
+    margin: var(--gutter);
+}
+
+.g-0{
+    --gutter: .5rem;
+}
+
+.g-1{
+    --gutter: .75rem;
+}
+
+.g-2{
+    --gutter: 1rem;
+}
+
+.g-3{
+    --gutter: 2rem;
+}
+
+.g-4{
+    --gutter: 2.5rem;
+}
+
+
+
+.row > * {
+    box-sizing: border-box;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+.col {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0%;
+
+    /* ???? */
+    /* flex-basis: auto; */
+
+    /* ????? width */
+}
+
+
+.col-6 {
+    /* Không cho phép bóp width của element lại */
+    flex-shrink: 0;
+
+    /* Chiếm lấy phần thừa của flex */
+    /* @TODO */
+    flex-grow: 1;
+
+
+    flex-basis: auto;
+    /* ????????? */
+    /* 
+        flex-basis: 100%;
+        phụ thuộc vào flex-direction
+        row -> width
+        column -> height
+    */
+
+    width: 100%;
+}
+
+.col-5 {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: calc(5 * 100% / 6);
+}
+
+.col-4 {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: calc(4 * 100% / 6);
+}
+
+.col-3 {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: calc(3 * 100% / 6);
+}
+
+.col-2 {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: calc(2 * 100% / 6);
+}
+
+.col-1 {
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: calc(1 * 100% / 6);
+}
+
+/* =============== */
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.box {
+    height: 100px;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+
+/* Responsive */
+/* sm */
+@media screen and (min-width: 576px) {
+    .col-sm-6 {
+        flex-basis: auto;
+        flex-shrink: 0;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+
+    .col-sm-5 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(5 * 100% / 6);
+    }
+
+    .col-sm-4 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(4 * 100% / 6);
+    }
+
+    .col-sm-3 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(3 * 100% / 6);
+    }
+
+    .col-sm-2 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(2 * 100% / 6);
+    }
+
+    .col-sm-1 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(1 * 100% / 6);
+    }
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+    .col-md-6 {
+        flex-basis: auto;
+        flex-shrink: 0;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+
+    .col-md-5 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(5 * 100% / 6);
+    }
+
+    .col-md-4 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(4 * 100% / 6);
+    }
+
+    .col-md-3 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(3 * 100% / 6);
+    }
+
+    .col-md-2 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(2 * 100% / 6);
+    }
+
+    .col-md-1 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(1 * 100% / 6);
+    }
+}
+
+/* lg */
+@media screen and (min-width: 992px) {
+    .col-lg-6 {
+        flex-basis: auto;
+        flex-shrink: 0;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    .col-lg-5 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(5 * 100% / 6);
+    }
+
+    .col-lg-4 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(4 * 100% / 6);
+    }
+
+    .col-lg-3 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(3 * 100% / 6);
+    }
+
+    .col-lg-2 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(2 * 100% / 6);
+    }
+
+    .col-lg-1 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(1 * 100% / 6);
+    }
+}
+
+/* .h1 {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 576px) {
+    .h1-sm {
+        font-size: 40px;
+        color: blue;;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .h1-md {
+        font-size: 50px;
+        color: green;;
+    }
+} */
+
+/* lg */
+@media screen and (min-width: 992px) {
+    .g-lg-0 {
+        --gutter: .5rem;
+    }
+    
+    .g-lg-1 {
+        --gutter: .75rem;
+    }
+    
+    .g-lg-2 {
+        --gutter: 1rem;
+    }
+    
+    .g-lg-3 {
+        --gutter: 2rem;
+    }
+    
+    .g-lg-4 {
+        --gutter: 2.5rem;
+    }
+
+    .col-lg-6 {
+        flex-basis: auto;
+        flex-shrink: 0;
+        flex-grow: 1;
+        width: calc(100% / 2 );
+    }
+
+    .col-lg-5 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(5 * 100% / 6);
+    }
+
+    .col-lg-4 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(4 * 100% / 6);
+    }
+
+    .col-lg-3 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(3 * 100% / 6);
+    }
+
+    .col-lg-2 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(2 * 100% / 6);
+    }
+
+    .col-lg-1 {
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: auto;
+        width: calc(1 * 100% / 6);
+    }
+}

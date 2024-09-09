@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+
+    font-size: 1.6rem;
+    font-family: "Inter",sans-serif;
+    background-color: #0a101e;
+    color: #a9adb8;
+}
+
+img{
+    width: 100% ;
+    height: auto;
+    display: block;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+.container{
+    /* max-width: 114px; */
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+/* Kiểm tra lỗi 1 element nào đó tràn màn hình gây ra scroll ngang */
+/* *, *::after, *::before {
+    outline: 1px solid red;
+} */
+
+
+/* Khai báo biến để tái sử dụng */
+/* Khai báo trong root để có thể sử dụng được toàn bộ trong dự án */
+/* root là nơi cao nhất */
+/* Những phần tử bên trong có thể kế thừa lại của root */
+:root {
+
+    /* Khai báo */
+    --clr-primary: #fec544;
+    /* --clr-primary: #24b1f3; */
+
+
+    /* Cách sử dụng */
+    /* var(--clr-primary) */
+}

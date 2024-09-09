@@ -1,0 +1,96 @@
+#hero {
+    background-image: url(../src/public/img/hero-bg-1.jpg);
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero .avatar{
+    width:20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+
+    margin: 0 auto;
+
+}
+
+#hero p{
+    color: white;
+    text-align: center;
+
+    line-height: 1,5;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+}
+
+#hero .getting {
+    color: #fdfeff;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 600;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#hero .getting span {
+    color: #fec544;
+}
+
+
+.hero__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+
+    margin-top: 2rem;
+}
+
+.hero__social a{
+   font-size: 2.4rem;
+   color: #fffdff;
+
+   width: 4.5rem;
+   height: 4.5rem;
+   border-radius: 50%;
+   border: 1px solid #159f09;
+   display: inline-block;
+
+   text-align: center;
+   line-height: 4.5rem;
+
+   transition: all 0.3s ease;
+   will-change: color , border;
+
+}
+
+.hero__social a:hover{
+    color:rgb(112, 68, 68);
+    border-color: rgb(50, 22, 158);
+
+    /* border-color: currentColor , phu thuoc vao color */
+}
+
+
+
+@media screen and (max-width:768px){
+    #hero .getting{
+        font-size: 5rem;
+    }
+
+    #hero p{
+        font-size: 1.6rem;
+    }
+    
+}
+
